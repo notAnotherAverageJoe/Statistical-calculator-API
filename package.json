@@ -1,0 +1,14 @@
+{
+  "name": "firstexpressexer",
+  "version": "1.0.0",
+  "description": "first exercise to find mean/median/mode",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "notAnotherAverageJoe",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}
