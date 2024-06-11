@@ -3,6 +3,11 @@ const app = express();
 const ExpressError = require('./expressError');
 
 const { convertAndValidateNumsArray, findMode, findMean, findMedian } = require('./helpers');
+app.use(express.static('public'));
+
+app.get('/', (req, res) => {
+  res.sendFile(path.join(__dirname, 'public', 'index.html'));
+});
 
 app.get('/mean', function(req, res, next) {
   if (!req.query.nums) {
